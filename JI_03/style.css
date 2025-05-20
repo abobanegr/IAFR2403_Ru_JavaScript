@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input, form select {
+    margin-left: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+  }
+  
+  tbody td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  tr.positive {
+    background-color: #d4edda;
+  }
+  
+  tr.negative {
+    background-color: #f8d7da;
+  }
+  
+  #total-container {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  #full-description-container {
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    max-width: 600px;
+  }

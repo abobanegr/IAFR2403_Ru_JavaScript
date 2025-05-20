@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Учёт личных финансов</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Учёт личных финансов</h1>
+
+  <form id="transaction-form">
+    <label>
+      Сумма:
+      <input type="number" step="0.01" id="amount" required />
+    </label>
+    <label>
+      Категория:
+      <select id="category" required>
+        <option value="">--Выберите категорию--</option>
+        <option value="Еда">Еда</option>
+        <option value="Транспорт">Транспорт</option>
+        <option value="Зарплата">Зарплата</option>
+        <option value="Развлечения">Развлечения</option>
+        <option value="Прочее">Прочее</option>
+      </select>
+    </label>
+    <label>
+      Описание:
+      <input type="text" id="description" required />
+    </label>
+    <button type="submit">Добавить транзакцию</button>
+  </form>
+
+  <!-- Таблица транзакций -->
+  <table id="transactions-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Дата и Время</th>
+        <th>Категория</th>
+        <th>Краткое описание</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div id="total-container">
+    Общая сумма: <span id="total-sum">0</span>
+  </div>
+
+  <div id="full-description-container">
+    <h3>Подробное описание транзакции</h3>
+    <p id="full-description">Выберите транзакцию из таблицы</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
