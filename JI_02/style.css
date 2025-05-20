@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#activity {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
